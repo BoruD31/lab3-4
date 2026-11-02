@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: fit-content;
+            height: fit-content;
+            margin: 20px auto;
+            background-color: #fff;
+            padding:20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .time {
+    text-align: right;
+    margin-bottom: 20px;
+    align-items: right;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <h2>Register Form</h2>
+    <form action="#" method="post">
+       <div class="time"> <input type="datetime-local"> <br><br></div> 
+       <div class="name">
+        <label for="Fname"> First Name:</label>
+        <input type="text" id="Fname" name="Fname" required>
+
+        <label for="Mname"> Middle Name:</label>
+        <input type="text" id="Mname" name="Mname" required>
+        <label for="Lname"> Last Name:</label>
+        <input type="text" id="Lname" name="Lname" required><br><br>
+     </div> 
+     <label for="gender">Gender:</label>
+       <input type="radio" id="male" name="gender" value="male" required>
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female" required>
+       <label for="female">Female</label>
+        <br>
+        <div class="birth">
+            <label for="birthplace">Place of Birth:</label>
+            <input type="text" id="birthplace" name="birthplace" required><br><br>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div class="parent">
+        <label for="Fname">Father's Name:</label>
+        <input type="text" id="Fname" name="Fname" required>
+        <label for="tell">Phone Number:</label>
+        <input type="tel" id="tell" name="tell" required><br><br>
+        <label for="Mname">Mother's Name:</label>
+        <input type="text" id="Mname" name="Mname" required>
+        <label for="tell">Phone Number:</label>
+        <input type="tel" id="tell" name="tell" required>
+        </div>
+   
+    </div>
+    <div class="college">
+       <label for="college">College:</label>
+       <select name="college" id="">
+        <option value="select" disabled selected>Select College</option>
+        <option value="college5">Engineering and Technology</option>
+        <option value="college6">Health Sciences</option>
+        <option value="college1">College of Natural and Computational Sciences</option>
+        <option value="college2">College of Social Sciences and Humanities</option>
+        <option value="college3">College of Business and Economics</option>
+        <option value="college4">College of Agriculture and Veterinary Medicine</option>
+       </select>
+       <label for="department">Department:</label>
+       <input type="text" id="department" name="department" required><br><br>
+        <br>
+        <label for="year">Year:</label>
+        <select name="year" id="">
+            <option value="select" disabled selected>Select Year</option>
+            <option value="year1">First Year</option>
+            <option value="year2">Second Year</option>
+            <option value="year3">Third Year</option>
+            <option value="year4">Fourth Year</option>
+            <option value="year5">Fifth Year</option>
+            <option value="year6">Sixth Year</option>
+            <option value="year7">Seventh Year</option>
+        </select>
+        <label for="semester">Semester:</label>
+        <input type="radio" id="semester1" name="semester" value="semester1" required>
+        <label for="semester1">1st Semester</label>
+        <input type="radio" id="semester2" name="semester" value="semester2" required>
+        <label for="semester2">2nd Semester</label>
+        <br><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+         <center><a href="lab3-4.html" style="text-decoration: none; 
+    background-color: #f0f0f0; border: 1px solid #ccc;
+     padding: 10px 20px; text-align: center; 
+     ;">Back to Home</a></center>
+    </form>
+</body>
+</html>

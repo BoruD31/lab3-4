@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    
+</head>
+<style>
+ body{
+    font-family: arial,sans-serif;
+    background-color: #e8f0f2;
+ }
+ form{
+    width: 600px;
+    margin: 40px auto;
+ }
+ fieldset{
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #0f5c6b;
+    border-radius: 8px;
+ }
+ legend{
+    background-color: white;
+    font-weight: bold;
+    color: #0f5c6b;
+ }
+ label{
+    font-weight: bold;
+ }
+ input[type="text"], select{
+    width:100%;
+    padding:8px;
+    margin-top: 4px;
+    border: 1px solid #999;
+    border-radius: 4px;
+ }
+ input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    margin: 0 4px 0 12px;
+    vertical-align: middle;
+    accent-color: #0f5c6b;
+    cursor: pointer;
+}
+ button{
+    padding: 10px 20px;
+    border:none;
+    border-radius: 4px;
+    background-color: #0f5c6b;
+    color:white;
+    cursor:pointer;
+ }
+ button:hover {
+        background-color: #0b3b46;
+    }
+    .home-btn {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #0f5c6b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+   align-items: center;
+}
+
+.home-btn:hover {
+    background-color: #0b3b46;
+}
+</style>
+<body>
+    <header></header>
+    <form action="#" method="post">
+        <fieldset>
+            <legend><h1>Student Login</h1></legend>
+
+            <p>
+                <label for="name">Student Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </p>
+
+            <p>
+                <label for="studentId">Student ID:</label><br>
+                <input type="text" id="studentId" name="studentId" placeholder="e.g. BRU/R/065/2017" required>
+            </p>
+
+            <p>
+                <label for="fayda">Student FAYDA ID No:</label><br>
+                <input type="text" id="fayda" name="fayda" placeholder="Enter your FAYDA ID number" required>
+            </p>
+
+            <p>
+                Sex:<br>
+                <input type="radio" id="male" name="sex" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>-- Select year --</option>
+                    <option value="1">Year 1</option>
+                    <option value="2">Year 2</option>
+                    <option value="3">Year 3</option>
+                    <option value="4">Year 4</option>
+                    <option value="5">Year 5</option>
+                </select>
+
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="" disabled selected>-- Select semester --</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="department">Department:</label><br>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>-- Select department --</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <button type="submit">Login</button>
+            <button type="reset">Clear</button><br><br>
+            <center><a href="lab3-4.html" class="home-btn">Home</a></center>
+        </fieldset>
+    </form>
+</body>
+</html>

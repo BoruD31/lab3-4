@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 0;
+        }
+
+        .l img {
+            width: 100%;
+            height: 200px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .r {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .r > div {
+            width: 40%;              
+            text-align: center;       
+        }
+
+        .r img {
+            width: 100%;              
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="l"><img src="images/1.jpg" alt="head"></div>
+
+    <div class="r">
+        <div>
+            <img src="images/bru.jpg" alt="bru">
+            <h1>Borana University</h1>
+        </div>
+        <div>
+            <img src="images/img8.jpg" alt="coffee">
+            <h1>This is Coffee</h1>
+        </div>
+    </div>
+    <center><a href="lab3-4.html" style="text-decoration: none; 
+    background-color: #f0f0f0; border: 1px solid #ccc;
+     padding: 10px 20px; text-align: center; 
+     ;">Back to Home</a></center>
+</body>
+</html>
